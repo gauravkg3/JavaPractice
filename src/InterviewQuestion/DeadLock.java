@@ -37,6 +37,9 @@ public class DeadLock {
 
         DeadLock deadLock = new DeadLock();
         // Thread t1=new Thread(deadLock::method1);
+        //Thread t1 = new Thread(() -> deadLock.method2());
+
+
         RunnaleThread runnaleThread = new RunnaleThread(deadLock);
         Thread t1 = new Thread(runnaleThread);
 
@@ -46,3 +49,10 @@ public class DeadLock {
         t2.start();
     }
 }
+
+//Thread t2 = new Thread(new Runnable() {
+//    @Override
+//    public void run() {
+//        deadLock.method2();
+//    }
+//});

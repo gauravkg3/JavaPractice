@@ -1,4 +1,4 @@
-package CodingShuttle;
+package CodingShuttle.Recursion;
 
 public class RecursionBascis {
     public static void main(String[] args) {
