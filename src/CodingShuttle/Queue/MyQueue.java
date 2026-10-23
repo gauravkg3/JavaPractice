@@ -2,7 +2,7 @@ package CodingShuttle.Queue;
 
 public class MyQueue {
     int size;
-    private int arr[];
+    private int[] arr;
     int front;
     int rear;
 
@@ -54,7 +54,7 @@ public class MyQueue {
     public int peek() {
 
         if (isEmpty()) {
-            System.out.println("Element cannot be popped");
+            System.out.println("Element cannot be peeked");
             return -1; //missed
         }
         return arr[front];
@@ -62,7 +62,7 @@ public class MyQueue {
 
     public void printQueue() {
 
-        if(isEmpty()) return; //missed
+        if (isEmpty()) return; //missed
         for (int i = front; i <= rear; i++) {
             System.out.print(arr[i] + " ");
         }
