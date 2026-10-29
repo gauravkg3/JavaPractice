@@ -40,8 +40,9 @@ public class SlidingWindowMaximum {
                 dq.pollLast();
             }
             dq.offerLast(a[i]);
+            ans[i - k] = a[i - k];
         }
-        ans[n - k] = dq.peekFirst();
+
 
         return ans;
     }
