@@ -4,8 +4,8 @@ import java.util.ArrayDeque;
 
 public class firstNegativeInWindow {
     public static void main(String[] args) {
-        int n[] = {2, -3, -1, 4, -5, -3, 2, 1, 4};
-        int ans[] = firstNegativeInWindow(n, 3);
+        int n[] = {-8, 2, -9, -6, 10};
+        int ans[] = firstNegativeInWindow(n, 2);
         for (int ele : ans) {
             System.out.print(ele + " ");
         }
